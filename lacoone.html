@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Laços da Vity</title>
+</head>
+<body>
+    <header> 
+        <a href="#"  class="logo"><i class='bx bxs-spa'></i> Laços Vity </a>
+
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">reviews</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <i class='bx bxs-cart'></i>
+            <div id="menu"><i class='bx bx-menu' ></i></div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="images/laco1.png" class="one">
+        </div>
+
+        <div class="home-text">
+
+            <h1>Laço<br> Delicado</h1>
+            <h5>O mais meigo os Laços</h5>
+            <h3>$20.85</h3>
+            <a href="#" class="btn">Shop Now</a>
+
+        </div>
+    </section>
+
+    <div class="main">
+
+        <div class="row">
+            <li><img src="images/mainlaco1.png" onclick="slider('images/laco1.png')"></li>
+        </div>
+
+        <div class="row2">
+            <li><img src="images/mainlaco2.png" onclick="slider('images/laco2.png')"></li>
+        </div>
+
+        <div class="row3">
+            <li><img src="images/mainlaco3.png" onclick="slider('images/laco3.png')"></li>
+        </div>
+
+    </div>
+    
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        }
+        let menu = document.querySelector ('#menu-icon');
+        let navbar = document.querySelector ('.navbar');
+
+        menu.onclick =() => {
+            menu.classeList.toggle('bx-x');
+            navbar.classList.toggle ('open');
+        }
+    </script>
+</body>
+</html>
